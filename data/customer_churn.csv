@@ -1,1 +1,6 @@
 
+import pandas as pd
+
+# Load dataset
+df = pd.read_csv("data/customer_churn.csv")
+df.head()
