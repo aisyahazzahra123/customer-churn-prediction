@@ -1,55 +1,87 @@
-# customer-churn-prediction
-Customer Churn Prediction using Machine Learning
-# 📉 Customer Churn Prediction
-Machine Learning classification project to predict whether a customer will churn (leave the service).
+📉 Customer Churn Prediction
+📌 Problem Statement
 
-This project focuses on a real-world business problem commonly faced by subscription-based companies.
+Customer churn is a major challenge for many subscription-based businesses.
+This project aims to predict whether a customer will churn (leave the service) based on their demographic information, service usage, and billing details, enabling businesses to take proactive retention actions.
 
----
+📊 Dataset
 
-## 🎯 Project Goals
-- Identify customers likely to churn
-- Understand key factors influencing churn
-- Train and evaluate classification models
-- Provide actionable business insights
+Dataset: Telco Customer Churn
 
----
+Records: ~7,000 customers
 
-## 📂 Dataset
-Using **Telco Customer Churn (IBM)** dataset (public & free).
+Target variable: Churn (Yes / No)
 
----
+Features include:
 
-## 🔧 Tools Used
-- Python
-- Pandas, NumPy
-- Matplotlib, Seaborn
-- Scikit-learn
-- Google Colab
+Customer demographics
 
----
+Contract type
 
-## 🧠 Models
-- Logistic Regression
-- Random Forest Classifier
+Monthly charges
 
----
+Service usage
 
-## 📘 Workflow
-1. Data loading
-2. Data cleaning & preprocessing
-3. Exploratory Data Analysis (EDA)
-4. Feature encoding
-5. Model training
-6. Model evaluation (Accuracy, Precision, Recall, F1-score)
-7. Insights & visualization
+⚙️ Methodology
 
----
+Data Cleaning
 
-## 📊 Results
-(Model metrics and insights will be updated after training.)
+Handled missing values
 
----
+Converted data types
 
-## 📝 Notes
-This project is part of my Data Science portfolio.
+Feature Engineering
+
+Dropped irrelevant features (e.g. customerID)
+
+Encoded categorical variables
+
+Modeling
+
+Logistic Regression
+
+Random Forest Classifier
+
+Evaluation
+
+Accuracy
+
+Confusion Matrix
+
+Precision, Recall, F1-score
+
+Special focus on recall for churn class
+
+📈 Model Results
+Model	Accuracy	Key Notes
+Logistic Regression	~82%	Better recall & interpretability
+Random Forest	~79%	Strong on non-churn prediction
+
+Logistic Regression performed better for identifying churn customers, making it more suitable for business use cases where missing churn customers is costly.
+
+💡 Business Insights
+
+Customers with month-to-month contracts are more likely to churn
+
+Higher monthly charges are strongly correlated with churn
+
+Improving recall helps businesses identify at-risk customers earlier, even if overall accuracy slightly decreases
+
+📌 These insights can support:
+
+Targeted retention campaigns
+
+Personalized pricing or contract strategies
+
+🛠️ Tools & Libraries
+
+Python
+
+Pandas, NumPy
+
+Scikit-learn
+
+Matplotlib, Seaborn
+
+Jupyter Notebook / Google Colab
+
