@@ -85,3 +85,25 @@ Matplotlib, Seaborn
 
 Jupyter Notebook / Google Colab
 
+▶️ How to Run
+
+Clone the repository:
+
+git clone https://github.com/aisyahazzahra123/customer-churn-prediction.git
+
+
+Open the notebook:
+
+customer_churn.ipynb
+
+
+Run all cells sequentially.
+
+📌 Author
+
+Aisyah Az-Zahra
+Junior Data Scientist
+GitHub: https://github.com/aisyahazzahra123
+
+
+
